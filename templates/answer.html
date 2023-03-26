@@ -1,0 +1,68 @@
+<!-- templates/answer.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answering Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #444;
+            text-align: center;
+        }
+        h2 {
+            font-size: 24px;
+            color: #444;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 10px;
+            }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Answer</h1>
+        <p><strong>Query:</strong> {{ query }}</p>
+        <p><strong>Answer:</strong> {{ answer }}</p>
+    <h2>Source Documents:</h2>
+    {% for document in source_documents %}
+    <p>{{ document.title }}</p>
+    <p>{{ document.text }}</p>
+    {% endfor %}
+</body>
+</html>
+
+</form>
+    <footer>
+        Made by the Infra Team
+    </footer>
+</body>
+</html>
